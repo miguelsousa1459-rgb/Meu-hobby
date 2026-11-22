@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Futebol: minha história</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div><a href="#historia">História</a><a href="#posicoes">Posições</a><a href="#placar">Placar</a><a href="#quiz">Quiz</a></div>
+    <button id="tema">Claro / Escuro</button>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <p class="kicker">Meu hobby</p>
+    <h1>Tudo começou <span>aos 10</span></h1>
+    <p class="lead">Foi com dez anos de idade que conheci o futebol. Daquele dia em diante, a bola nunca mais saiu da minha vida.</p>
+  </div>
+
+  <section id="historia">
+    <h2>Minha história com a bola</h2>
+    <dl class="hist">
+      <dt>Aos 10 anos</dt>
+      <dd>Conheci o futebol. Antes disso era só um jogo que eu via de longe, e depois passou a ser a primeira coisa em que eu pensava quando acordava.</dd>
+      <dt>Depois disso</dt>
+      <dd>Passei a participar de escolinhas de futebol. Foi lá que aprendi o básico de verdade: o domínio, o passe, o posicionamento e, principalmente, jogar em equipe.</dd>
+      <dt>Hoje</dt>
+      <dd>O futebol continua sendo meu hobby favorito. Jogo, assisto e converso sobre ele sempre que tenho chance, e levo comigo tudo o que as escolinhas me ensinaram.</dd>
+    </dl>
+  </section>
+
+  <section id="posicoes">
+    <h2>O que aprendi sobre as posições</h2>
+    <details open><summary>Goleiro</summary><p>Defende o gol e enxerga o jogo inteiro de trás. É o único que pode usar as mãos, e só dentro da própria área.</p></details>
+    <details><summary>Zagueiro</summary><p>Fecha a defesa, corta as jogadas e briga pelas bolas altas.</p></details>
+    <details><summary>Lateral</summary><p>Marca pelos lados e também sobe para ajudar no ataque.</p></details>
+    <details><summary>Meia</summary><p>Liga a defesa ao ataque e decide o ritmo da partida com seus passes.</p></details>
+    <details><summary>Atacante</summary><p>Finaliza as jogadas. Precisa de velocidade e de calma na hora de chutar.</p></details>
+  </section>
+
+  <section id="placar">
+    <h2>Placar da pelada</h2>
+    <div class="box">
+      <div class="placar">
+        <div><h3>Time A</h3><div class="num" id="gA">0</div>
+          <button class="bt" data-t="A" data-d="1">+ Gol</button><button class="bt alt" data-t="A" data-d="-1">−</button></div>
+        <div class="x">×</div>
+        <div><h3>Time B</h3><div class="num" id="gB">0</div>
+          <button class="bt" data-t="B" data-d="1">+ Gol</button><button class="bt alt" data-t="B" data-d="-1">−</button></div>
+      </div>
+      <p id="msg"></p>
+      <div style="text-align:center"><button class="bt alt" id="zerar">Zerar</button></div>
+    </div>
+  </section>
+
+  <section id="quiz" style="border:0">
+    <h2>Quiz rápido</h2>
+    <div class="box q" id="qBox"></div>
+  </section>
+
+  <footer>Feito por alguém que joga bola desde os 10 anos.</footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
